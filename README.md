@@ -1,5 +1,29 @@
 # gosexy/to
 
+[![Build Status](https://travis-ci.org/yookoala/gosexy-to.png)](https://travis-ci.org/yookoala/gosexy-to)
+
+This is a fork of the original `menteslibres.net/gosexy/to` library for go1.11+
+support with go.mod. The site menteslibres.net is constantly down, which stops
+any user from resolving the library at all. From go1.11+, you can define
+overriding in `go.mod` file.
+
+Note: You must have a proper `go.mod` setup for this to work. If you're not
+sure, read [this](https://github.com/golang/go/wiki/Modules) first.
+
+## Installation
+
+If you already have a proper `go.mod` in your project, run the below command
+in your project root:
+
+```
+go mod edit -replace="menteslibres.net/gosexy/to=github.com/yookoala/gosexy-to@v1.0.0"
+go mod tidy
+```
+
+Should you have problems with it, please [report issue](https://github.com/yookoala/gosexy-to/pulls).
+
+# Original gosexy/to README
+
 *Convenient* functions for converting values between common Go datatypes. For
 Go 1.1+.
 
@@ -12,7 +36,7 @@ not ignore any error in your program, you should better use the standard Go
 packages for conversion, such as [strconv][4], [fmt][5] or even [standard
 conversion][6] they may be better suited for the task.
 
-[![Build Status](https://travis-ci.org/yookoala/gosexy-to.png)](https://travis-ci.org/yookoala/gosexy-to)
+[![Build Status](https://travis-ci.org/gosexy/to.png)](https://travis-ci.org/gosexy/to)
 
 ## Installation
 
