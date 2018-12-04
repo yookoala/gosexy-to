@@ -12,7 +12,7 @@ not ignore any error in your program, you should better use the standard Go
 packages for conversion, such as [strconv][4], [fmt][5] or even [standard
 conversion][6] they may be better suited for the task.
 
-[![Build Status](https://travis-ci.org/gosexy/to.png)](https://travis-ci.org/gosexy/to)
+[![Build Status](https://travis-ci.org/yookoala/gosexy-to.png)](https://travis-ci.org/yookoala/gosexy-to)
 
 ## Installation
 
